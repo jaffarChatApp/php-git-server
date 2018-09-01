@@ -14,6 +14,9 @@ function str_endswith($s, $test) {
     if ($testlen > $strlen) return FALSE;
     return substr_compare($s, $test, -$testlen) === 0;
 }
+function testing() {
+   echo "Function responded";
+}
 
 function header_nocache() {
     header('Expires: Fri, 01 Jan 1980 00:00:00 GMT');
